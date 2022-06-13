@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <div
+      class="relative main-container flex flex-col h-full items-center px-1 pt-12 md:px-6 md:items-start text-center md:text-left md:justify-start md:bg-no-repeat md:bg-right-top md:space-y-48 lg:bg-right lg:space-y-72 xl:pl-96"
+    >
+      <img src="/assets/desktop/logo.svg" alt="" />
+      <div
+        class="h-full w-full flex flex-col space-y-12 md:bg-darkBlue md:space-y-8 md:w-10/12 md:px-4 lg:w-3/5"
+      >
+        <div>
+          <h1
+            class="text-3xl uppercase text-primaryGreen font-light md:text-5xl md:pt-20"
+          >
+            Publish Your Podcast
+          </h1>
+          <h1 class="text-3xl uppercase text-white font-light md:text-5xl">
+            Everywhere
+          </h1>
+        </div>
+
+        <p class="text-veryLightPurple leading-8 md:w-7/12">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="w-full flex justify-between items-center md:order-last">
+          <img class="w-20 lg:w-28" src="/assets/desktop/spotify.svg" alt="" />
+
+          <img
+            class="w-20 lg:w-28"
+            src="/assets/desktop/apple-podcast.svg"
+            alt=""
+          />
+          <img
+            class="w-20 lg:w-40"
+            src="/assets/desktop/google-podcasts.svg"
+            alt=""
+          />
+
+          <img
+            class="w-20 lg:w-40"
+            src="/assets/desktop/pocket-casts.svg"
+            alt=""
+          />
+        </div>
+        <div class="relative w-full md:flex md:w-8/12">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="input w-full rounded-full mb-4"
+          />
+          <button
+            class="bg-primaryGreen text-darkBlue font-semibold py-3 w-full rounded-full hover:bg-white md:absolute md:w-2/5 md:top-1 md:right-1 md:py-2"
+          >
+            Request Access
+          </button>
+        </div>
+      </div>
+      <img
+        class="hidden md:block lg:absolute lg:right-1 lg:bottom-44"
+        src="/assets/desktop/bg-pattern-dots.svg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

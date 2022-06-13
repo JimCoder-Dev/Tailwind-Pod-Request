@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: liner-gradient(hsl(224, 35%, 11%));
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.8)),
+    url('../assets/mobile/image-host.jpg');
+
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen(md) {
+  body {
+    background: hsl(224, 35%, 11%);
+  }
+
+  .main-container {
+    background: url('../assets/tablet/image-host.jpg');
+  }
+}
+
+@media screen(lg) {
+  .main-container {
+    background: url('../assets/desktop/image-host.jpg');
+  }
+}
